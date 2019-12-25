@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="uNY-uh-p7V">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Login-->
+        <scene sceneID="SZV-to-WRL">
+            <objects>
+                <viewController id="uNY-uh-p7V" customClass="LoginVC" customModule="IOSTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="6iw-96-qWa">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gpcSunset" translatesAutoresizingMaskIntoConstraints="NO" id="mpa-nG-WpN">
+                                <rect key="frame" x="0.0" y="88" width="414" height="808"/>
+                            </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VJp-6Z-eZb" customClass="TextFieldExtended" customModule="IOSTest" customModuleProvider="target">
+                                <rect key="frame" x="30" y="152" width="354" height="55"/>
+                                <color key="backgroundColor" red="0.97647058823529409" green="0.97647058823529409" blue="0.97647058823529409" alpha="0.61823283450704225" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" red="0.37254901959999998" green="0.37647058820000001" blue="0.38823529410000002" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="55" id="Dx1-WY-O0Q"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="leftPadding">
+                                        <real key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2co-dC-eAO" customClass="TextFieldExtended" customModule="IOSTest" customModuleProvider="target">
+                                <rect key="frame" x="30" y="231" width="354" height="55"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.6119608274169015" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" red="0.37254901960784315" green="0.37647058823529411" blue="0.38823529411764707" alpha="0.84705882352941175" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="55" id="Egh-rQ-9iu"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" textContentType="password"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="leftPadding">
+                                        <real key="value" value="7"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KTE-ua-AmW">
+                                <rect key="frame" x="30" y="310" width="354" height="55"/>
+                                <color key="backgroundColor" red="0.054901960784313725" green="0.36078431372549019" blue="0.53725490196078429" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="55" id="IcE-aY-gpF"/>
+                                </constraints>
+                                <state key="normal" title="LOGIN">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="login:" destination="uNY-uh-p7V" eventType="touchUpInside" id="9Zb-7M-zHo"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Hy8-au-ga2" firstAttribute="trailing" secondItem="mpa-nG-WpN" secondAttribute="trailing" id="0d5-Ca-3sy"/>
+                            <constraint firstItem="VJp-6Z-eZb" firstAttribute="top" secondItem="Hy8-au-ga2" secondAttribute="top" constant="64" id="22B-8b-cJi"/>
+                            <constraint firstItem="mpa-nG-WpN" firstAttribute="leading" secondItem="Hy8-au-ga2" secondAttribute="leading" id="3d8-rC-u3i"/>
+                            <constraint firstItem="KTE-ua-AmW" firstAttribute="top" secondItem="2co-dC-eAO" secondAttribute="bottom" constant="24" id="4I1-wn-dpX"/>
+                            <constraint firstItem="Hy8-au-ga2" firstAttribute="trailing" secondItem="VJp-6Z-eZb" secondAttribute="trailing" constant="30" id="A7q-AK-d5N"/>
+                            <constraint firstItem="mpa-nG-WpN" firstAttribute="top" secondItem="Hy8-au-ga2" secondAttribute="top" id="ETg-cn-GvI"/>
+                            <constraint firstItem="2co-dC-eAO" firstAttribute="leading" secondItem="Hy8-au-ga2" secondAttribute="leading" constant="30" id="JcY-nR-ddF"/>
+                            <constraint firstAttribute="bottom" secondItem="mpa-nG-WpN" secondAttribute="bottom" id="NMw-Ab-qLi"/>
+                            <constraint firstItem="VJp-6Z-eZb" firstAttribute="leading" secondItem="Hy8-au-ga2" secondAttribute="leading" constant="30" id="ZKI-Ev-eR3"/>
+                            <constraint firstItem="KTE-ua-AmW" firstAttribute="leading" secondItem="Hy8-au-ga2" secondAttribute="leading" constant="30" id="iAJ-cF-Cr9"/>
+                            <constraint firstItem="Hy8-au-ga2" firstAttribute="trailing" secondItem="2co-dC-eAO" secondAttribute="trailing" constant="30" id="jLC-Sm-p2K"/>
+                            <constraint firstItem="2co-dC-eAO" firstAttribute="top" secondItem="VJp-6Z-eZb" secondAttribute="bottom" constant="24" id="nuv-T2-QaY"/>
+                            <constraint firstItem="Hy8-au-ga2" firstAttribute="trailing" secondItem="KTE-ua-AmW" secondAttribute="trailing" constant="30" id="rZt-e8-G0b"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Hy8-au-ga2"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Login" id="9Zk-hr-v0V"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="emailTextfield" destination="VJp-6Z-eZb" id="gTD-Va-CkW"/>
+                        <outlet property="loginOutlet" destination="KTE-ua-AmW" id="gYr-yZ-Scq"/>
+                        <outlet property="passwordTextField" destination="2co-dC-eAO" id="dl1-HH-4Gw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QZv-MG-rlY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="986.95652173913049" y="132.58928571428572"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="gpcSunset" width="376" height="667"/>
+    </resources>
+</document>
